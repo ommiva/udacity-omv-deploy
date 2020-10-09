@@ -1,4 +1,6 @@
-
+# OS related
 .DS_Store
 .python-version
 
+# Project
+.env_file
