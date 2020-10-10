@@ -4,3 +4,5 @@
 
 # Project
 .env_file
+trust.json
+iam-role-policy.json
