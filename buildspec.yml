@@ -23,9 +23,8 @@ phases:
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
       - python -m pip install --upgrade --force pip
-      - apt-get update && apt-get -y install jq  
-      #&& pip install --upgrade awscli
-      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - apt-get update && apt-get -y install jq  && pip install --upgrade awscli
+      #- curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       - unzip awscliv2.zip
       - ./aws/install
   pre_build:
